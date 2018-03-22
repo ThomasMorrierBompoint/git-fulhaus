@@ -8,13 +8,19 @@ const helmet = require('helmet');
 const SERVER_PORT = 8080;
 
 app.enable('trust proxy');
-app.use(helmet());
+app.use(helmet({
+  frameguard: false,
+}));
 app.use(compression());
 
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/index.html');
+});
+
+app.get('/desktop', function (req, res) {
+  res.sendFile(__dirname + '/public/desktop.html');
 });
 
 app.all('*', (req, res) => {
