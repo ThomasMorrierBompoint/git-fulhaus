@@ -1,28 +1,16 @@
 {
-  "name": "quebecoin",
+  "name": "git-fulhaus",
   "version": "1.0.0",
-  "description": "Quebecoin website",
+  "description": "Fulhaus prototype",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThomasMorrierBompoint/quebecoin.git"
-  },
-  "keywords": [
-    "Quebecoin",
-    "cryptocurency"
-  ],
   "author": "Thomas Morrier-Bompoint",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ThomasMorrierBompoint/quebecoin/issues"
-  },
-  "homepage": "https://github.com/ThomasMorrierBompoint/quebecoin#readme",
   "dependencies": {
-    "compression": "^1.7.1",
-    "express": "^4.16.2",
-    "helmet": "^3.10.0"
+    "compression": "1.7.1",
+    "express": "4.16.2",
+    "helmet": "3.10.0"
   }
 }
